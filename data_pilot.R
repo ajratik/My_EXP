@@ -89,7 +89,6 @@ a = merged_data %>%
   identify_outliers(time)
 merged_data = merged_data[!(merged_data$Имя_Фамилия %in% a$Имя_Фамилия),]
 
-merged_data = merged_data[!(merged_data$Имя_Фамилия %in% c('Daniil Azarov')),]
 
 #merged_data =merged_data[!(is_outlier(merged_data$time, coef = 1.5)),]
 
